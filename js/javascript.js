@@ -1,9 +1,7 @@
 const container = document.querySelector(".container");
-createGrid();
-function createGrid(){
+createGrid(16,16);
+function createGrid(rows, cols){
 
-    let rows = 16;
-    let cols = 16;
     let gridDiv;
     let innerDiv;
 
@@ -14,6 +12,9 @@ function createGrid(){
         for(let c = 0; c < cols; c++){
             let cell = document.createElement("div");
             cell.classList.add("square");
+            cell.addEventListener("mouseover", () => {
+                cell.style.backgroundColor = "red";
+            })
             innerDiv.appendChild(cell);
         }
         container.appendChild(innerDiv);
