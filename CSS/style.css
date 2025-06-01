@@ -2,7 +2,7 @@
     background-color: white;
     border: 1px solid black;
     flex: 1;
-    aspect-ratio: 1; /* ✅ keep squares square */
+    aspect-ratio: 1;
     min-width: 0;
     min-height: 0;
 }
